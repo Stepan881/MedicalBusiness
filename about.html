@@ -1,0 +1,346 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>О фирме</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="./index.html" class="header__logo link-logo">
+        <img class="link-logo__img" src="./img/logo.svg" alt="Логотип">
+      </a>
+      <a class="header__btn-menu">
+        <span class="header__btn-menu-line"></span>
+        <span class="header__btn-menu-line"></span>
+        <span class="header__btn-menu-line"></span>
+      </a>
+      <div class="header__wrapper-nav">
+        <button class="header__btn-nav-close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-1" x2="25.4551" y2="-1" transform="matrix(0.707127 0.707087 -0.462493 0.886623 1 2)" stroke="white" stroke-width="2"/>
+            <line y1="-1" x2="25.4555" y2="-1" transform="matrix(0.707096 -0.707117 0.462525 0.886607 1 19.998)" stroke="white" stroke-width="2"/>
+            </svg>
+        </button>
+        <nav class="header__nav nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a href="./about.html" class="nav-menu__link nav-menu__link--active">О фирме</a><button class="nav-menu__link-arrow"></button>
+              <ul class="nav-menu__sub-list">
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./about-history.html">История</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./about-command.html">Команда</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./about-logo.html">О логотипе</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./about-friends.html">Друзья фирмы</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./about-documents.html">Правовые документы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item">
+              <a href="./services.html" class="nav-menu__link">Услуги</a><button class="nav-menu__link-arrow"></button>
+              <ul class="nav-menu__sub-list">
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./services-medical.html">Медицинское право</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./services-dispute.html">Разрешение споров</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./services-practice.html">Коммерческая практика</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./services-experience.html">Наш опыт</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./services-cost.html">Стоимость услуг </a>
+                </li>
+              </ul>
+            </li> 
+            <li class="nav-menu__item">
+              <a href="./infocenter.html" class="nav-menu__link">Инфоцентр</a><button class="nav-menu__link-arrow"></button>
+              <ul class="nav-menu__sub-list">
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./infocenter-news.html">Новости</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./infocenter-publications.html">Публикации</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./infocenter-letters.html">Информационные письма</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./infocenter-blog.html">Блог Анжелики Ремез</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item">
+              <a href="./career.html" class="nav-menu__link">Карьера</a><button class="nav-menu__link-arrow"></button>
+              <ul class="nav-menu__sub-list">
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./career-firm.html">Структура фирмы</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./career-competence.html">Компетенции роста</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./career-academy.html">Академия медицинского юриста</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./career-vacancies.html">Вакансии</a>
+                </li>
+                <li class="nav-menu__sub-item">
+                  <a class="nav-menu__sub-link" href="./career-resume.html">Отправить резюме </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item">
+              <a href="./contacts.html" class="nav-menu__link">Контакты</a>
+            </li>
+          </ul>
+          <a class="header__call" href="tel:74955405870">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M19.5001 21.75H19.3726C4.63506 20.9025 2.54256 8.4675 2.25006 4.6725C2.22649 4.37744 2.26138 4.08062 2.35272 3.79906C2.44406 3.5175 2.59006 3.25673 2.78235 3.03169C2.97464 2.80665 3.20945 2.62177 3.47332 2.48763C3.73719 2.35349 4.02493 2.27274 4.32006 2.25H8.45256C8.75298 2.24971 9.04657 2.33963 9.29529 2.50812C9.54401 2.67661 9.73641 2.9159 9.84756 3.195L10.9876 6C11.0973 6.27266 11.1246 6.57156 11.0659 6.85957C11.0072 7.14758 10.8652 7.412 10.6576 7.62L9.06006 9.2325C9.3096 10.6506 9.9887 11.9578 11.0055 12.9772C12.0223 13.9967 13.3277 14.6792 14.7451 14.9325L16.3726 13.32C16.5837 13.1146 16.8506 12.9759 17.14 12.9213C17.4294 12.8666 17.7286 12.8983 18.0001 13.0125L20.8276 14.145C21.1025 14.2597 21.337 14.4536 21.5013 14.702C21.6656 14.9504 21.7522 15.2422 21.7501 15.54V19.5C21.7501 20.0967 21.513 20.669 21.0911 21.091C20.6691 21.5129 20.0968 21.75 19.5001 21.75ZM4.50006 3.75C4.30115 3.75 4.11039 3.82902 3.96973 3.96967C3.82908 4.11032 3.75006 4.30109 3.75006 4.5V4.56C4.09506 9 6.30756 19.5 19.4551 20.25C19.5536 20.2561 19.6524 20.2427 19.7457 20.2105C19.839 20.1783 19.9251 20.1281 19.9989 20.0626C20.0728 19.9971 20.133 19.9176 20.1761 19.8288C20.2192 19.74 20.2443 19.6436 20.2501 19.545V15.54L17.4226 14.4075L15.2701 16.545L14.9101 16.5C8.38506 15.6825 7.50006 9.1575 7.50006 9.09L7.45506 8.73L9.58506 6.5775L8.46006 3.75H4.50006Z" fill="#24344B"/>
+            </svg>
+            <span class="header__call-text">+7 (495) 540-58-70</span>
+          </a>
+          <a href="#" class="header__search">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M11.4471 17.605C9.8456 17.6047 8.2831 17.1522 6.93591 16.3084C6.50766 16.0402 5.94303 16.0689 5.58571 16.4262L2.21882 19.793C1.8283 20.1835 1.19517 20.1835 0.804647 19.793L0.707163 19.6955C0.316614 19.3049 0.316614 18.6718 0.707163 18.2812L4.07378 14.9148C4.43118 14.5574 4.4599 13.9926 4.19152 13.5643C3.34725 12.217 2.89449 10.6543 2.8941 9.05249C2.8941 4.33686 6.73117 0.5 11.4471 0.5C16.1629 0.5 20 4.33686 20 9.05249C20 13.7681 16.1629 17.605 11.4471 17.605ZM11.4471 2.63812C7.90934 2.63812 5.03234 5.51497 5.03234 9.05249C5.03234 12.59 7.90934 15.4669 11.4471 15.4669C14.9848 15.4669 17.8618 12.59 17.8618 9.05249C17.8618 5.51497 14.9848 2.63812 11.4471 2.63812Z" fill="#24344B"/>
+              <path d="M11.4471 17.605C9.8456 17.6047 8.2831 17.1522 6.93591 16.3084C6.50766 16.0402 5.94303 16.0689 5.58571 16.4262L2.21882 19.793C1.8283 20.1835 1.19517 20.1835 0.804647 19.793L0.707163 19.6955C0.316614 19.3049 0.316614 18.6718 0.707163 18.2812L4.07378 14.9148C4.43118 14.5574 4.4599 13.9926 4.19152 13.5643C3.34725 12.217 2.89449 10.6543 2.8941 9.05249C2.8941 4.33686 6.73117 0.5 11.4471 0.5C16.1629 0.5 20 4.33686 20 9.05249C20 13.7681 16.1629 17.605 11.4471 17.605ZM11.4471 2.63812C7.90934 2.63812 5.03234 5.51497 5.03234 9.05249C5.03234 12.59 7.90934 15.4669 11.4471 15.4669C14.9848 15.4669 17.8618 12.59 17.8618 9.05249C17.8618 5.51497 14.9848 2.63812 11.4471 2.63812Z" fill="#24344B"/>
+            </svg>
+            <span class="header__search-text">Поиск</span>
+          </a> 
+        </nav>
+  
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    <section class="sub-menu">
+      <div class="sub-menu__fix">
+        <div class="container">
+          <div class="sub-menu__wrapper">
+            <h2 class="visually-hidden">Меню</h2>
+            <ul class="sub-menu__list">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="./about-history.html">История</a>
+              </li>
+              <li class="sub-menu__item">
+                <span class="sub-menu__border"></span>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="./about-command.html">Команда</a>
+              </li>
+              <li class="sub-menu__item">
+                <span class="sub-menu__border"></span>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="./about-logo.html">О логотипе</a>
+              </li>
+              <li class="sub-menu__item">
+                <span class="sub-menu__border"></span>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="./about-friends.html">Друзья фирмы</a>
+              </li>
+              <li class="sub-menu__item">
+                <span class="sub-menu__border"></span>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="./about-documents.html">Правовые документы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <h2 class="about__header">О фирме</h2>
+          <a class="about__download-wrapper" href="#" download>
+            <div class="about__download-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4998 19.9664L21.2604 14.7355L22 15.4086L16.3683 21.5966L15.9985 22.003L15.6288 21.5966L9.99707 15.4086L10.7366 14.7355L15.4998 19.9692V8H16.4998V19.9664Z" fill="#C9A872"/>
+                <line x1="8" y1="23.5" x2="24" y2="23.5" stroke="#C9A872"/>
+                <circle cx="16" cy="16" r="15.5" stroke="#C9A872"/>
+              </svg>
+            </div>
+            <span class="about__download-text">Скачать презентацию о фирме</span>
+          </a>
+          <div class="about__bottom">
+            <div class="about__box">
+              <p class="about__text">Ремез, Печерей и Партнеры – российская юридическая фирма со специализацией на комплексном сопровождении медицинского бизнеса. Основана в 2005 году.
+              </p>
+              <p class="about__text">Клиенты фирмы – частные медицинские организации, в основном многопрофильные с амбулаторно-поликлиническим и стационарным лечением пациентов.
+              </p>
+              <p class="about__text">Интересы пациентов фирма не представляет. Это решение основано на том, что тщательно оберегаемой ценностью нашей практики является сложившееся глубокое доверие между клиниками и фирмой.
+              </p>
+            </div>
+            <div class="about__box">
+              <p class="about__text">В процессе мы получаем много конфиденциальной информации, раскрывающей внутренние тонкости и нюансы медицинской деятельности. Мы абсолютно убеждены, что юристы не имеют права использовать эту информацию против медицинских коллег своих клиентов, даже при отсутствии прямого конфликта интересов. Считаем это нарушением этики.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-task">
+      <div class="container">
+        <div class="about-task__wrapper">
+          <h2 class="about-task__head">Главная задача «Ремез, Печерей и Партнеры» – выстраивание длительных и эффективных отношений с доверителями - частными клиниками, поэтому строит свою работу на трех основных принципах:
+          </h2>
+          <div class="about-task__wrapper-item">
+            <div class="about-task__advantages">
+              <h3 class="about-task__advantages-header">Честность</h3>
+              <p class="about-task__advantages-text">В процессе оказания услуг мы гарантируем открытый и честный диалог, открытое взаимодействие, полное предоставление информации о ходе дел.
+              </p>
+            </div>
+            <div class="about-task__advantages">
+              <h3 class="about-task__advantages-header">Надежность</h3>
+              <p class="about-task__advantages-text">Уже много лет фирма взращивает доверие клиентов и формирует репутацию надежных юристов. Это совокупность таких качеств как: ответственность, обязательность, пунктуальность, порядочность и др.</p>
+            </div>
+            <div class="about-task__advantages">
+              <h3 class="about-task__advantages-header">Конфиденциальность</h3>
+              <p class="about-task__advantages-text">Сохранение тайны клиента основано не только на тайне между юристом и его доверителем, но и на наличии охраняемого государством режима врачебной тайны. Любое ее раскрытие возможно только с письменного согласия клиента.</p>
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+    <!-- style="margin: 1500px 0;" -->
+    <section class="about-services">
+      <div class="container">
+        <div class="about-services__wrapper">
+          <h2 class="visually-hidden">Услуги</h2>
+          <p class="about-services__text">«Ремез, Печерей и Партнеры» построена по принципу классической юридической фирмы, в которой услуги распределены на специализированные правовые практики, подробно описанные в соответствующем разделе сайта</p>
+          <a class="about-services__btn" href="#">Услуги</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__doc">
+          <div class="footer__img"> 
+            <img class="footer__image" src="./img/footer-logo.svg" alt="Логотип">
+          </div>
+          <div class="footer__info-wrapper">
+            <span class="footer__info">ООО "РПИП"</span>
+            <span class="footer__info">ИНН 5041207109</span>
+            <span class="footer__info">КПП 770701001</span>
+          </div>
+        </div>
+        <div class="footer__contact">
+           <a class="footer__contact-item" href="tel:+74955405870">+7 (495) 540-58-70</a>
+           <a class="footer__contact-item" href="mailto:msk@lawmedgroup.ru">msk@lawmedgroup.ru</a>
+           <address class="footer__address">107031, г. Москва,<br class="footer__br">ул. Петровка, д. 15,<br class="footer__br">стр. 1, оф. 504</address>
+           <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">facebook</span>
+                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 40C9.45428 40 0.5 31.0457 0.5 20C0.5 8.95428 9.45428 0 20.5 0C31.5457 0 40.5 8.95428 40.5 20C40.5 31.0457 31.5457 40 20.5 40ZM22.3766 14.3863C22.3766 13.4103 22.4726 12.888 23.9331 12.888H25.8818V9.14743H22.7617C19.0143 9.14743 17.6954 10.9623 17.6954 14.0126V16.2583H15.3583V19.9977H17.6954V30.8492H22.3708V19.9977H25.4908L25.9045 16.2583H22.3708L22.3766 14.3863Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">youtube</span>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="41" height="41" viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;" xml:space="preserve"
+                  ><g><g>
+                    <path fill="white" d="M39.969,59.587c7.334-3.803,14.604-7.571,21.941-11.376c-7.359-3.84-14.627-7.63-21.941-11.447
+                      C39.969,44.398,39.969,51.954,39.969,59.587z"/>
+                    <path fill="white" d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+                       M82.176,65.189c-0.846,3.67-3.848,6.377-7.461,6.78c-8.557,0.957-17.217,0.962-25.842,0.957c-8.625,0.005-17.287,0-25.846-0.957
+                      c-3.613-0.403-6.613-3.11-7.457-6.78c-1.203-5.228-1.203-10.933-1.203-16.314s0.014-11.088,1.217-16.314
+                      c0.844-3.67,3.844-6.378,7.457-6.782c8.559-0.956,17.221-0.961,25.846-0.956c8.623-0.005,17.285,0,25.841,0.956
+                      c3.615,0.404,6.617,3.111,7.461,6.782c1.203,5.227,1.193,10.933,1.193,16.314S83.379,59.962,82.176,65.189z"/>
+                  </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                </svg>
+                                               
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">instagram</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z" fill="white"/>
+                  <path d="M28.9529 13.2269C28.7689 12.7282 28.4753 12.2769 28.0938 11.9064C27.7233 11.5249 27.2723 11.2313 26.7733 11.0473C26.3687 10.8901 25.7607 10.7031 24.6411 10.6521C23.4298 10.5969 23.0667 10.585 20.0002 10.585C16.9335 10.585 16.5704 10.5966 15.3594 10.6518C14.2397 10.7031 13.6315 10.8901 13.2272 11.0473C12.7282 11.2313 12.2769 11.5249 11.9067 11.9064C11.5252 12.2769 11.2316 12.7279 11.0473 13.2269C10.8901 13.6315 10.7031 14.2397 10.6521 15.3594C10.5969 16.5704 10.585 16.9335 10.585 20.0002C10.585 23.0667 10.5969 23.4298 10.6521 24.6411C10.7031 25.7607 10.8901 26.3687 11.0473 26.7733C11.2316 27.2723 11.5249 27.7233 11.9064 28.0938C12.2769 28.4753 12.7279 28.7689 13.2269 28.9529C13.6315 29.1104 14.2397 29.2974 15.3594 29.3484C16.5704 29.4036 16.9332 29.4152 19.9999 29.4152C23.067 29.4152 23.4301 29.4036 24.6407 29.3484C25.7604 29.2974 26.3687 29.1104 26.7733 28.9529C27.7749 28.5665 28.5665 27.7749 28.9529 26.7733C29.11 26.3687 29.2971 25.7607 29.3484 24.6411C29.4036 23.4298 29.4152 23.0667 29.4152 20.0002C29.4152 16.9335 29.4036 16.5704 29.3484 15.3594C29.2974 14.2397 29.1104 13.6315 28.9529 13.2269ZM20.0002 25.8972C16.7431 25.8972 14.1027 23.2571 14.1027 19.9999C14.1027 16.7428 16.7431 14.1027 20.0002 14.1027C23.2571 14.1027 25.8975 16.7428 25.8975 19.9999C25.8975 23.2571 23.2571 25.8972 20.0002 25.8972ZM26.1306 15.2477C25.3695 15.2477 24.7524 14.6307 24.7524 13.8696C24.7524 13.1085 25.3695 12.4914 26.1306 12.4914C26.8917 12.4914 27.5088 13.1085 27.5088 13.8696C27.5085 14.6307 26.8917 15.2477 26.1306 15.2477Z" fill="white"/>
+                  <path d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM31.4151 24.7348C31.3596 25.9573 31.1652 26.792 30.8813 27.5226C30.2847 29.0652 29.0652 30.2847 27.5226 30.8813C26.7923 31.1652 25.9573 31.3593 24.7351 31.4151C23.5104 31.4709 23.1192 31.4844 20.0003 31.4844C16.8811 31.4844 16.4902 31.4709 15.2652 31.4151C14.043 31.3593 13.208 31.1652 12.4777 30.8813C11.7111 30.593 11.0172 30.141 10.4434 29.5566C9.85931 28.9832 9.40735 28.2889 9.11896 27.5226C8.83514 26.7923 8.64075 25.9573 8.58521 24.7351C8.52875 23.5101 8.51562 23.1189 8.51562 20C8.51562 16.8811 8.52875 16.4899 8.5849 15.2652C8.64044 14.0427 8.83453 13.208 9.11835 12.4774C9.40674 11.7111 9.85901 11.0168 10.4434 10.4434C11.0168 9.85901 11.7111 9.40704 12.4774 9.11865C13.208 8.83484 14.0427 8.64075 15.2652 8.5849C16.4899 8.52905 16.8811 8.51562 20 8.51562C23.1189 8.51562 23.5101 8.52905 24.7348 8.58521C25.9573 8.64075 26.792 8.83484 27.5226 9.11835C28.2889 9.40674 28.9832 9.85901 29.5569 10.4434C30.141 11.0172 30.5933 11.7111 30.8813 12.4774C31.1655 13.208 31.3596 14.0427 31.4154 15.2652C31.4713 16.4899 31.4844 16.8811 31.4844 20C31.4844 23.1189 31.4713 23.5101 31.4151 24.7348Z" fill="white"/>
+                </svg>    
+              </a>
+            </li>
+           </ul>
+        </div>
+        <div class="footer__menu">
+          <nav class="footer__nav">
+            <ul class="footer__nav-item">
+              <li class="footer__nav-list">
+                <a class="footer__nav-link" href="./about.html">О фирме</a>
+              </li>
+              <li class="footer__nav-list">
+                <a class="footer__nav-link" href="./services.html">Услуги</a>
+              </li>
+              <li class="footer__nav-list">
+                <a class="footer__nav-link" href="./infocenter.html">Инфо-центр</a>
+              </li>
+              <li class="footer__nav-list">
+                <a class="footer__nav-link" href="./career.html">Карьера</a>
+              </li>
+              <li class="footer__nav-list">
+                <a class="footer__nav-link" href="./contacts.html">Контакты</a>
+              </li> 
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__news">
+          <a class="footer__news-download" href="#">
+            <svg class="footer__icon-download" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 18.7929L20.6464 14.6464L21.3535 15.3536L16.3535 20.3536L16 20.7071L15.6464 20.3536L10.6464 15.3536L11.3535 14.6464L15.5 18.7929V8H16.5V18.7929Z" fill="white"/>
+              <line x1="9" y1="22.5" x2="23" y2="22.5" stroke="white"/>
+              <circle cx="16" cy="16" r="15.5" stroke="white"/>
+            </svg>              
+            Презентация о фирме</a>
+          <a class="footer__news-download" href="#">
+            <svg class="footer__icon-download" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 18.7929L20.6464 14.6464L21.3535 15.3536L16.3535 20.3536L16 20.7071L15.6464 20.3536L10.6464 15.3536L11.3535 14.6464L15.5 18.7929V8H16.5V18.7929Z" fill="white"/>
+              <line x1="9" y1="22.5" x2="23" y2="22.5" stroke="white"/>
+              <circle cx="16" cy="16" r="15.5" stroke="white"/>
+            </svg>
+            Презентация об услугах</a>
+          <div class="footer__news-download-btn">Подписаться на новости</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__consent">© 2005-2020 Все права защищены</span>
+        <span class="footer__border"></span>
+        <span class="footer__consent"><a class="footer__consent-link" href="./rules.html">Пользовательское соглашение</a></span>
+        <span class="footer__border"></span>
+        <span class="footer__consent"><a class="footer__consent-link" href="./politics.html">Политика конфиденциальности</a></span>
+        <span class="footer__border"></span>
+        <span class="footer__consent"><a class="footer__consent-link" href="#">Дизайн и разработка сайта <b>Brandlif</b></a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

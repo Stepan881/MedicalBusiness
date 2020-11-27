@@ -1,0 +1,135 @@
+.services-experience-case {
+  background: $bg-color-menu;
+ 
+  &__wrapper {
+    padding: 80px 0 39px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-article {
+    &__activity-wrapper {
+      position: relative;
+    }
+    &__article-link-page {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &__activity-data {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .services-medical {
+    &__head {
+      width: 60%;
+      margin-bottom: 32px;
+    }
+
+    &__head-text {
+      margin-bottom: 40px;
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-left: 25px;
+  }
+
+  &__link {
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.7;
+    }
+  }
+
+  &__content {
+    margin-top: 30px;
+    padding-left: 99px;
+    width: 71%;
+  }
+
+  &__sub-head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    margin-bottom: 40px;
+  }
+
+  &__wrapper-img {
+    margin-bottom: 40px;
+  }
+  &__img {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .services-experience-case {
+    &__wrapper {
+      padding: 60px 0 28px;
+    }
+  
+    .about-article {
+      &__activity-data {
+        margin-bottom: 32px;
+      }
+    }
+  
+    .services-medical {
+      &__head {
+        width: 96%;
+
+      }
+  
+      &__head-text {
+        margin-bottom: 32px;
+      }
+    }
+    
+    &__item {
+      margin-left: 0;
+      margin-right: 32px;
+    }
+
+    &__content {
+      margin-top: 54px;
+      padding-left: 0;
+      width: 100%;
+    }
+  
+    &__sub-head {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 24px;
+    }
+  
+    &__wrapper-img {
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    &__img {
+      object-fit: contain;
+      width: auto;
+    }
+  }
+}
+

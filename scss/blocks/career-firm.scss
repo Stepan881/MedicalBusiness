@@ -1,0 +1,161 @@
+.career-firm {
+
+  .services {
+    &__wrapper {
+      padding: 80px 0 47px;
+    }
+    &__head {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px
+    }
+
+    &__wrapper-bottom {
+      padding: 40px 0 10px;
+    }
+
+    &__list {
+      margin-top: 40px;
+      width: 68%;
+    }
+    &__item {
+      padding-left: 28px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__item-link {
+      font-family: 'PTRBold';
+      font-weight: 700;
+      color: $color-hover;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+    }
+  }
+
+
+  &__bg-dark {
+    background-color: $bg-color-tel;
+  }
+  &__wrapper {
+    padding: 60px 0 26px;
+  }
+  &__head {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    width: 100%;
+    max-width: 684px;
+  }
+  &__img-wrapper {
+    max-width: 1440px;
+    position: relative;
+    text-align: center;
+    margin: 48px auto 0;
+  }
+  &__serch {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 27px 0 0px;
+    width: 100%;  
+    max-width: 513px;
+  }
+  &__bottom-wrapper {
+    max-width: 627px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  &__sub-head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 40px;
+  }
+  &__serch-link {
+    display: none;
+  }
+}
+
+
+
+
+
+
+@media (max-width: $mobile-width - 1) {
+  .career-firm {
+
+    .services {
+      &__wrapper {
+        padding: 60px 0 25px;
+      }
+      &__head {
+        font-family: 'PTRBold';
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 0px;
+      }
+      &__list {
+        margin-top: 23px;
+        width: 100%;
+        margin-bottom: 17px;
+      }
+      &__right {
+        margin-top: 0px;
+      }
+    }
+  
+  
+    &__bg-dark {
+      background-color: $bg-color-tel;
+    }
+    &__wrapper {
+      padding: 60px 0 56px;
+    }
+    &__head {
+      font-family: 'PTRMedium';
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 36px;
+      width: 100%;
+    }
+    &__text {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 20px 0 0;
+      width: 100%; 
+    }
+    &__bottom-wrapper {
+      width: 100%;
+      padding-top: 61px;
+      padding-bottom: 44px;
+    }
+    &__sub-head {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 40px;
+      margin-top: 24px;
+    }
+    &__serch-link {
+      display: block;
+    }
+  }
+}

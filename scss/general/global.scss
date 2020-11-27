@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PTRNormal", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color;
+  background-color: #F4F4F4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3{
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 150px;
+  max-width: $tablet-width;
+  height: inherit;
+  &--min {
+    padding: 0;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 1000px) {
+      padding: 41px 25px 35px;
+    }
+  }
+  &__wrapper {
+    margin-left: -13%;
+    padding: 60px 0 88px;
+    width: 100%;
+
+    @media (max-width: 1000px) {
+      margin-left: 0;
+
+    }
+
+    @media (max-width: $mobile-width - 1) {
+      margin-left: 0;
+      padding: 41px 0 35px;
+      width: 100%;
+    }
+
+  }
+}
+
+
+@media (max-width: $tablet-width - 1) {
+  .container {
+    content: '';
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 0 17px;
+  }
+}
+
+@mixin hover-color-gold() {
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: $color-hover;
+
+    svg {    
+      transition: 0.3s;
+      opacity: 0.7;
+    }
+    path {
+      transition: 0.3s;
+      fill: $color-hover;
+    }
+    line {
+      transition: 0.3s;
+      stroke: $color-hover;
+    }
+    circle {
+      transition: 0.3s;
+      stroke: $color-hover;
+    }
+  }
+}
+
+@mixin hover-btn-gold() {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  transition: 0.3s;
+  border: 1px solid $color-hover;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: $color-hover;
+
+  }
+}
+
+@mixin hover-link-gold() {
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: $color-hover;
+
+  }
+  &--active {
+    transition: 0.3s;
+    color: $color-hover;
+    cursor: default;
+  }
+}
+
+.icon-arrow {
+  transition: 0.3s;
+  display: flex;
+  width: 15px;
+  height: 1px;
+  background: $color-hover;
+  position: relative;
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background: $color-hover;
+    right: -4px;
+
+    transform: rotate(45deg) translate(-50%, 0px);
+            
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: -4px;
+    background: $color-hover;
+    right: -4px;
+
+    transform: rotate(-45deg) translate(-50%, 0px);
+  }
+}

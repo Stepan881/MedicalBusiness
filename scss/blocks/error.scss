@@ -1,0 +1,115 @@
+.error {
+  background: linear-gradient(180deg, #24344B 23.51%, rgba(36, 52, 75, 0.7) 100%);
+  height: 100%;
+  position: relative;
+  min-height: 576px;
+  overflow: hidden;
+  &__logo {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__wrapper {
+    position: absolute;
+    text-align: center;
+    padding: 100px 0;
+    max-width: 531px;
+    min-height: 380px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+  }
+
+  &__head {
+    color: $color-hover;
+    font-family: 'BitterRegular';
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 42px;
+  }
+
+  &__sub-head {	
+    color: $bg-color-menu;
+    font-family: 'BitterRegular';
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 37px;
+    display: block;
+  }
+
+  &__text {	
+    color: $bg-color-menu;
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    
+    display: block;
+    width: 88%;
+    margin: 0 auto 81px;
+  }
+
+  &__btn {
+    color: $bg-color-menu;
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 auto;
+    width: 369px;
+    height: 60px;
+    display: flex;
+    @include hover-btn-gold();
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .error {
+
+    min-height: 576px;
+    &__logo {
+      right: -125px;
+    }
+  
+    &__wrapper {
+      max-width: 341px;
+      position: static;
+      left: none;
+      top: none;
+      transform: translate(0);
+    }
+  
+    &__head {
+      font-size: 30px;
+      line-height: 44px;
+      margin-bottom: 24px;
+    }
+  
+    &__sub-head {	
+      font-size: 30px;
+      line-height: 44px;
+      margin-bottom: 23px;
+    }
+  
+    &__text {	
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0 auto 60px;
+    }
+    &__btn {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0 auto 59px;
+      width: 100%;
+
+    }
+  }
+}

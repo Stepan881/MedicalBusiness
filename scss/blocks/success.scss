@@ -1,0 +1,123 @@
+.success {
+  
+  &__wrapper {
+    max-height: 362px;
+    height: 100%;
+    padding: 121px 0 100px;
+    
+  }
+  .popup__wrapper.success__wrapper {
+    min-height: 362px;
+  }
+  &__success {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;  
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto 0;
+    text-align: center;  
+  }
+  &__wrapper-svg {
+    margin: 72px auto 34px;
+    text-align: center;
+
+    svg {
+      width: 255px;
+      height: 255px;
+    }
+  }
+  
+  &__consultation {
+    max-width: 474px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 43px;
+    margin-top: 40px;
+  }
+
+  &__data {
+    max-width: 474px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 43px;
+  }
+
+  &__time {
+    font-family: 'PTRBold';
+    color: $color-hover;
+    font-weight: bold;
+  }
+
+  &__feedback {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px; 
+  }
+
+  &__br {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .success {
+    &__br {
+      display: block;
+    }
+    .popup__wrapper.success__wrapper {
+      min-height: 517px;
+    }
+    &__wrapper {
+      max-height: 518px;
+      padding: 188px 0 100px;
+    }
+    &__success {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      width: 80%;
+      margin: 23px auto 0;
+    }
+    &__wrapper-svg {
+      margin: 55px auto 34px;
+  
+      svg {
+        width: 164px;
+        height: 164px;
+      }
+    }
+    &__consultation {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      margin: 25px auto 0;
+    }
+  
+    &__data {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__time {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.about-friends {
+  background: $sub-menu-c;
+
+  &__wrapper {
+    padding: 80px 0 39px;
+
+  }
+
+  &__head-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    padding-right: 50px;
+  }
+
+  &__wrapper-left {
+    max-width: 720px;
+  }
+
+  &__head-text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  &__friends-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 55px 0 20px;
+  }
+
+  &__card {
+    width: 49%;
+    margin-bottom: 39px;
+  }
+
+  &__img-wrapper {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    width: 83%;
+  }
+
+  &__bottom {
+    margin: 42px auto 79px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__text-info {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979DA6;
+    text-align: center;
+    width: 58%;
+
+  }
+  
+
+
+}
+@media (max-width: $mobile-width - 1) {
+  .about-friends {
+
+    &__wrapper {
+      padding: 60px 0 13px;
+    }
+    
+    &__wrapper-top {
+      flex-direction: column;    
+    }
+    
+    &__head {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      display: block;
+      margin-bottom: 40px;
+    }
+    
+    &__head-text {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+    &__friends-wrapper {
+      flex-direction: column;
+      margin: 35px 0 20px;
+
+    }
+    
+    &__card {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    
+    &__img-wrapper {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+    
+    &__bottom {
+      margin: 20px auto 47px;
+    }
+    
+    &__text-info {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      width: 100%;
+    }
+
+    &__br {
+      display: none;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,34 @@
+.form-feedback {
+  background: $bg-color-menu;
+  padding-bottom: 58px;
+  
+  &__head {
+    font-family: 'PTRNormal';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 78px;
+  }
+  &__form {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .form-feedback {
+    padding-bottom: 28px;
+
+    &__head {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px; 
+      text-align: left;
+      padding-top: 80px;
+    }
+    &__form {
+      padding: 28px 0;
+    }
+
+  }
+}

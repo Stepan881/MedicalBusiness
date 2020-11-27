@@ -1,0 +1,187 @@
+.infocenter-letter {
+  &__release { 
+    width: 100%;
+    font-family: 'BitterRegular';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $pagination-c;
+
+  }
+
+  .about {
+    padding-bottom: 80px;
+    &__header {
+      margin-top: 38px;
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+      width: 60%;
+    }
+    &__bottom {
+      margin-top: 42px;
+    }
+    &__box {
+      width: 53%;
+    }
+    &__wrapper {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+
+  .services-medical {
+    &__head-text {
+      font-family: 'PTRNormal';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+      width: 99%;
+      
+    }
+  }
+
+  .services-experience-case {
+    &__sub-head {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 23px;
+    }
+  }
+  
+  &__info {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .infocenter-publication {
+    &__head-text-bold {
+      font-family: 'PTRNormal';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 29px 0 24px 10px;
+    }
+  }
+
+  .services-medical-content {
+    background-color: $bg-color-menu;
+    &__list {
+      margin-left: 10px;
+      width: 100%;
+      margin-bottom: 33px;
+    }
+    &__item {
+      font-family: 'PTRNormal';
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .infocenter-letter {
+    &__release { 
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .about {
+      padding-bottom: 48px;
+      &__wrapper {
+        padding-top: 61px;
+      }
+
+      &__text {
+        margin-bottom: 0px;
+      }
+
+      &__header {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        width: 100%;
+        margin-top: 31px;
+      }
+
+      &__download-wrapper {
+        margin: 32px 0 0;
+      }
+      &__download-icon {
+        order: 0;
+        margin-left: 0;
+        margin-right: 12px;
+      }
+      &__bottom {
+        margin-top: 60px;
+   
+      }
+      &__box {
+        width: 100%;
+      }
+      &__wrapper {
+        padding-bottom: 0px;
+      }
+    }
+
+    &__head {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 60px;
+      margin-bottom: 40p
+    }
+  
+    .services-medical {
+      &__head-text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  
+    .infocenter-letter {
+      &__info {
+        margin-bottom: 32px;
+      }
+    }
+  
+    .services-experience-case {
+      &__content {
+        margin-top: 26px;
+      }
+    }
+  
+    .infocenter-publication {
+      &__head-text-bold {
+        margin: 19px 0 24px 0px;
+      }
+    }
+  
+    .services-medical-content {
+      &__list {
+        margin-left: 0px;
+        margin-bottom: 25px;
+      }
+      &__item {
+        padding: 0 0 0 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.career-competence {
+  background-color: $bg-color-menu;
+  &__card-sub-head {
+    font-family: 'PTRNormal';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .services-cost {
+    &__card {
+      padding: 0;
+      margin-left: 98px;
+    }
+    &__card-list {
+      margin-top: 40px;
+      margin-bottom: 60px;
+  
+    }
+    &__card-item {
+      padding-left: 48px;
+    }
+    &__wrapper-bottom {
+      margin-bottom: 80px;
+    }
+  }
+
+
+  &__content-head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    display: block;
+    width: 100%;
+    max-width: 652px;
+    margin: 4px 0 60px 98px;
+  }
+
+  &__info-bottom {
+    color: $pagination-c;
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .career-competence {
+    .services-cost {  
+      &__card {
+        padding: 0;
+        margin-bottom: 32px;
+        margin-left: 0px;
+      }
+      &__card-head {
+        margin-bottom: 21px;
+      }
+
+      &__card-list {
+        margin-top: 32px;
+        margin-bottom: 0px;
+    
+      }
+      &__card-item {
+        padding-left: 15px;
+        font-family: 'BitterRegular';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &__wrapper-bottom {
+        margin-bottom: 68px;
+      }
+    }
+  
+  
+    &__content-head {
+      font-family: 'PTRMedium';
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 36px;
+      margin: 5px 0 40px;
+    }
+    &__card-sub-head {
+      font-family: 'PTRNormal';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__info-bottom {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }  
+}

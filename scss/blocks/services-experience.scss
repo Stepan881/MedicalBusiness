@@ -1,0 +1,156 @@
+.services-experience {
+
+  &__wrapper {
+    padding: 80px 0 66px;
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 5px 5px 5px 0;
+    margin-right: 27px;
+
+    @include hover-link-gold();
+  }
+
+
+  &__cards {
+    margin-top: 60px;
+  }
+
+  .about-article {
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__activity-wrapper {
+      width: 48.5%;
+      padding: 36px 127px 22px 35px;
+      min-height: 324px;
+      margin-bottom: 29px;
+      background: $bg-color-menu;
+      position: relative;
+    }
+    &__article-link-page {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    &__activity-data {
+      color: $pagination-c;
+    }
+
+    &__publications-text {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+    }
+
+    &__publications-link {
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0px 0 13px;
+    }
+  }
+  &__pagination {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .services-experience {
+
+    &__wrapper {
+      padding: 60px 0 18px;
+    }
+  
+    &__head {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    &__list {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+  
+    &__item {
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  
+  
+    &__cards {
+      margin-top: 16px;
+    }
+  
+    .about-article {
+  
+      &__activity-wrapper {
+        width: 100%;
+        padding: 28px 43px 22px 20px;
+        min-height: 272px;
+        margin-bottom: 16px;
+      }
+  
+      &__activity-data {
+        margin-bottom: 32px;
+      }
+  
+      &__publications-text {
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+      &__publications-link {
+        margin: 0 0 6px;
+      }
+    }
+    &__pagination {
+      margin: 44px 0;
+    }
+  }
+}
+

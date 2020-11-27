@@ -1,0 +1,52 @@
+.about-services {
+  background: $bg-color-menu;
+  
+  &__wrapper {
+    padding: 110px 0 125px;
+  }
+  
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  &__btn {
+    margin: 60px auto 0;
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    width: 264px;
+    height: 60px;
+    @include hover-btn-gold;
+  }
+
+}
+
+@media (max-width: $mobile-width + 149) {
+  .about-services {
+  
+
+    &__wrapper {
+      padding: 60px 0;
+    }
+
+    &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      width: 95%;
+    }
+
+    &__btn {
+      font-size: 20px;
+      line-height: 28px;
+      margin: 40px auto 0;
+      width: 340px;
+    }
+  }
+}

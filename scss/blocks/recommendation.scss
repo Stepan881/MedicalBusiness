@@ -1,0 +1,234 @@
+.recommendation {
+  background: $recommendation-bg;
+  overflow-x: hidden;
+  padding-bottom: 82px;
+
+  &__head {
+    color: $main-screen-color;
+    font-family: 'PTRBold';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 79px;
+    
+  }
+
+  &__wrapper-slide {    
+    background: $bg-color-tel;
+    padding: 80px 0 65px 58px;
+    margin: -59px 0 -100px 29%;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      transform: translate(100%);
+      right: 1px;
+      top: 0;
+      background: $bg-color-tel;
+      z-index: 0;
+    }
+  }
+
+  &__text {
+    font-family: 'BitterRegular';
+
+    font-size: 20px;
+    line-height: 30px;
+    
+    padding-left: 21px;
+    width: 80%;
+    border-left: 1px solid $color-hover;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-right: 30px;
+  }
+  
+  &__name {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__job {
+    font-family: 'PTRNormal';
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__logo {
+    height: 54px;
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__boolet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+  }
+
+  &__boolet-arrow {
+    cursor: pointer; 
+    border: 2px solid $main-text-link;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+    }
+    &--left {
+      &::before {
+        position: absolute;
+        content: '';
+        width: 13px;
+        height: 2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -6px)
+                   rotate(-45deg);
+        background-color: $main-text-link;
+        transition: 0.3s;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 13px;
+        height: 2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, 2px)
+                   rotate(45deg);
+        background-color: $main-text-link;
+        transition: 0.3s;
+      }
+    }   
+    &--right {
+      &::before {
+        position: absolute;
+        content: '';
+        width: 13px;
+        height: 2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -6px)
+                   rotate(45deg);
+        background-color: $main-text-link;
+        transition: 0.3s;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 13px;
+        height: 2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, 2px)
+                   rotate(-45deg);
+        background-color: $main-text-link;
+        transition: 0.3s;
+      }
+
+    }  
+  }
+
+  &__boolet-text {
+    font-family: 'BitterRegular';
+    color: $main-text-link;
+    font-size: 24px;
+    line-height: 30px;
+    
+    margin: 0 18px;
+  }
+
+  &__number {
+    color: $main-screen-color;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  .recommendation {
+
+    &__wrapper-slide {
+      margin: 15px 0;
+    }
+
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .recommendation {
+    background: $recommendation-bg-phome;
+    padding-bottom: 13px;
+
+    &__head {
+      font-size: 28px;
+      line-height: 36px;
+      padding-top: 40px;
+      padding-bottom: 27px;
+    }
+    &__text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 0 1px;
+      padding: 0 0 0 11px;
+      width: 90%;
+    }
+    &__wrapper-slide {
+      margin: 0;
+      padding: 29px 0;
+      &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        transform: translate(-100%);
+        left: 1px;
+        top: 0;
+        background-color: inherit;
+        z-index: 0;
+      }
+    }
+    &__slide {
+      background: $bg-color-tel;
+
+    }
+    &__bottom {
+      flex-direction: column;
+      margin-top: 48px;
+    }
+    &__logo {
+      order: 1;
+      height: 37px;
+    }
+    &__bottom-left {
+      margin-top: 23px;
+      order: 2;
+    }
+    &__boolet {
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      margin: 0 auto;
+    }
+    &__boolet-text {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}

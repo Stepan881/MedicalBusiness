@@ -1,0 +1,288 @@
+.popup {
+  display: none;
+
+  background-color: $bg-color-menu;
+  &--open {
+    display: block;
+  }
+  &__wrapper {
+    background-color: $footer-bg;
+    color: $bg-color-menu;
+    position: relative;
+    padding: 40px 100px;
+
+
+    max-width: 1140px;
+    height: 100%;
+
+    width: 100%;
+    min-height: 704px;
+  }
+  &__btn-close {
+    position: absolute;
+    right: 25px;
+    top: 23px;
+    width: 34px;
+    height: 34px;
+    padding: 3px;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 26px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%)
+                  rotate(-45deg);
+      background: $bg-color-tel;
+      
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 26px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%)
+                  rotate(45deg);
+      background: $bg-color-tel;
+    }
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      &::after,
+      &::before {
+        background-color: $color-hover;
+      }
+    }
+  }
+  &__head {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 50%;
+
+  }
+  &__form {
+    max-width: 360px;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: auto;
+  }
+  &__form-group {
+    width: 100%;
+  }
+  &__form-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__form-input {
+    border: none;
+    color: $bg-color-menu;
+    border-bottom: 2px solid #F4F4F4;
+    padding: 0 0 10px 0;
+    width: 100%;
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    background: transparent;
+    outline:none;
+    &::placeholder {
+      color: $form-c-op;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+    &:focus {
+      border-bottom: 2px solid $form-border-focus;
+    }
+    &--error {
+      color: $form-error-c;
+    }
+  }
+  &__form-error-text {
+    width: 100%;
+    margin-bottom: 6px;
+    color: $form-error-c;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &__form-input--error ~ .popup__form-error-text {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  &__form-politics {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+    color: $form-c-op;
+  }
+  &__form-politics-link {
+    color: $bg-color-menu;
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      color: $form-c-op;
+    }
+  }
+  &__form-btn-submit {
+    width: 100%;
+    @include hover-btn-gold();
+    color: $bg-color-menu;
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: transparent;
+  }
+  &__calendar {
+    margin-top: 60px;
+    max-width: 460px; 
+    width: 100%;
+    min-height: 522px; 
+    display: flex;
+    flex-direction: column;
+  }
+  &__calendar-data {
+    flex: 1;
+  }
+  &__calendar-time {
+    margin: 0 -21px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__time-input {
+    &:checked+.popup__time-label {
+      color: $color-hover;
+    }
+  }
+  &__time-label {
+    font-family: 'BitterRegular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    margin: 18px 21px 0 21px;
+    display: inline-flex;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    
+  }
+  &__time-label-border {
+    margin-top: auto;
+    min-width: 1px;
+    max-width: 1px;
+    min-height: 24px;
+    max-height: 24px;
+    background: $bg-color-tel;
+    display: flex;
+    align-items: baseline;
+  }
+  &__calendar-time-head {
+    position: absolute;
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    left: 19px;
+    top: -27px;
+  }
+}
+
+@media (max-width: 950px) {
+  .popup {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__calendar {
+      margin: 0 auto;
+    }
+    &__form {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .popup {
+    &__wrapper {
+      padding: 40px 17px 60px;
+      height: auto;
+      min-height: 518px;
+    }
+    &__btn-close {
+      right: 10px;
+      top: 8px;
+      &::after,
+      &::before {
+        top: 17px;
+      }
+    }
+    &__head {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      width: 100%;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__form {
+      margin-top: 47px;
+    }
+    &__form-input {
+      padding: 0 0 12px;
+    }
+    &__form-politics {
+      margin-top: 1px;
+    }
+    &__form-btn-submit {
+      margin-top: 59px;
+    }
+    &__calendar {
+      margin-top: 0px;
+      min-height: 567px;
+    }
+    &__calendar-time-head {
+      top: -14px;
+    }
+    &__time-label {
+      margin: 27px 18px 0;
+    }
+  }
+}

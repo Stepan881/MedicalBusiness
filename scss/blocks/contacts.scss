@@ -1,0 +1,240 @@
+.contacts {
+  overflow: hidden;
+  background: linear-gradient($bg-color-tel 0%, $bg-color-tel 90%, $color-hover 90%, $color-hover 100%);
+  .about {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+
+    &__top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__header {
+      font-family: 'BitterRegular';
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    &__download-text {
+      font-family: 'PTRMedium';
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__bottom {
+      margin-top: 63px;
+    }
+
+  }
+  .footer {
+    background-color: transparent;
+    color: $color;
+    padding-bottom: 0px;
+
+    &__social-list {
+      margin-top: 0px;
+    }
+    &__social-link {
+      svg {
+        path {
+          fill: $color;
+        }
+      }
+    }
+  }
+  &__left {
+    width: 320px;
+  }
+  &__item-top {
+    display: flex;
+    flex-direction: column;
+  }
+  &__head-top {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    color: $pagination-c;
+  }
+  &__link-top {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 37px;
+    font-style: normal;
+
+    &--link {
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+    }
+  }
+
+
+  &__map {
+    margin-right: -150px;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  &__map-img {
+    display: flex;
+    object-fit: cover;
+  }
+  &__map-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+@media (max-width: 1080px) {
+  .contacts {
+    overflow: hidden;
+    background: linear-gradient($bg-color-tel 0%, $bg-color-tel 90%, $color-hover 90%, $color-hover 100%);
+    .about {
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+      }
+      &__download-wrapper {
+        margin: 0 0 0;
+      }
+      &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      &__header {
+        font-family: 'BitterRegular';
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+      }
+      &__download-text {
+        font-family: 'PTRMedium';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__bottom {
+        margin-top: 63px;
+        flex-direction: column;
+      }
+    }
+    .footer {
+      background-color: transparent;
+      color: $color;
+      padding-bottom: 0px;
+
+      &__social-list {
+        margin-top: 0px;
+      }
+      &__social-link {
+        svg {
+          path {
+            fill: $color;
+          }
+        }
+      }
+    }
+
+    &__left {
+      width: 320px;
+    }
+    &__item-top {
+      display: flex;
+      flex-direction: column;
+    }
+    &__head-top {
+      font-family: 'PTRMedium';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+    &__link-top {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 37px;
+      font-style: normal;
+    }
+
+    &__image-wrapper {
+      min-width: 100%;
+    }
+    &__map {
+      margin-right: -70px;
+      margin-left: -70px;
+      min-width: none;
+      max-height: 600px;
+      min-width: 100%;
+    }
+    &__map-img {
+      display: flex;
+      min-width: 100%;
+      object-fit: cover;
+      max-height: 600px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width - 1) {
+  .contacts {
+
+
+    .about {
+      &__header {
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 44px;
+      }
+      &__download-wrapper {
+        margin: 41px 0 0 0;
+      }
+      &__top {
+        flex-direction: column;
+      }
+    }
+    .footer {
+      &__social-list {
+        margin: 0;
+        width: 180px;
+        justify-content: space-between;
+        margin: 35px 0;
+        width: 176px;
+      }
+    }
+    &__link-top {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 25px;
+    }
+    &__map {
+      margin-right: -17px;
+      margin-left: -17px;
+    }
+    &__map-img {
+      height: 100%;
+    }
+    &__br {
+      display: none;
+    }
+  }
+}

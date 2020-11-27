@@ -1,0 +1,125 @@
+.aside-case {
+  background: $bg-color-tel;
+
+  &__wrapper {
+    padding: 80px 0 67px;
+  }
+
+  &__wrapper-cards {
+    background: $bg-color-menu;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  &__wrapper-boolet {
+    display: none;
+  }
+
+  .about-article {
+    background: $bg-color-tel;
+    &__activity-wrapper {
+      width: 31.6%;
+      background: $bg-color-menu;
+      padding: 41px 27px 0px 24px;
+      min-width: 310px;
+    }
+    
+    &__activity-data {
+      margin-bottom: 24px;
+    }
+
+    &__publications-text {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      flex: 1;
+      margin-bottom: 21px;
+    }
+
+    &__publications-link {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .services-medical {
+    background: $bg-color-tel;
+
+    &__head {
+      margin-bottom: 58px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .aside-case {
+
+  
+    &__wrapper {
+      padding: 60px 0 26px;
+      
+    }
+  
+    &__wrapper-cards {
+      flex-direction: column;
+    }
+  
+    &__wrapper-boolet {
+      display: flex;
+
+      margin: 0 auto;
+    }
+
+
+    .recommendation {
+      &__boolet {
+        height: 88px;
+        padding: 0;
+        max-width: 251px;
+      }
+
+      &__number {
+        color: $color;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    .about-article {
+
+      &__activity-wrapper {
+        width: 100%;
+        padding: 28px 37px 0 20px;
+        min-height: 272px;
+      }
+      
+      &__activity-data {
+        margin-bottom: 32px;
+      }
+  
+      &__publications-text {
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+      &__publications-link {
+        margin: -15px 0 28px;
+      }
+    }
+    .services-medical {
+
+  
+      &__head {
+        margin-bottom: 40px;
+      }
+
+      &__head-text {
+        display: none;
+      }
+    }
+  }
+}

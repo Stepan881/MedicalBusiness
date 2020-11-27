@@ -1,0 +1,48 @@
+.infocenter-blog {
+  .infocenter {
+
+    &__card {
+      max-width: none;
+      width: 49%;
+    }
+
+    &__card-wrapper-img {
+
+      min-height: 300px;
+    }
+    &__card-img {
+      min-height: 300px;
+      height: 100%;
+    }
+    &__card:nth-child(4) .infocenter__card-img {
+      min-height: auto;
+    }
+    &__card-img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .infocenter-blog {
+    .infocenter {
+  
+      &__card {
+        max-width: none;
+        width: 100%;
+        min-height: 488px;
+        height: 100%;
+      }
+      &__card-wrapper-img {
+
+        min-height: 216px;
+      }
+      &__card-img {
+        min-height: 216px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

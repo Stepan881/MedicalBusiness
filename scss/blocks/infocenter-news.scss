@@ -1,0 +1,116 @@
+.infocenter-news {
+  .services-experience-case {
+    &__wrapper {
+      padding: 80px 0 119px;
+    }
+    &__top {
+      margin-bottom: 29px;
+    }
+  }
+
+  .services-medical {
+    &__head {
+      width: 78%;
+    }
+    &__head-text {
+      width: 64%;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__announcement {
+    display: flex;
+    width: 80%;
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__announcement-link {
+    display: flex;
+    width: 78%;
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-hover;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+
+  .infocenter__wrapper {
+    padding: 87px 0 15px;
+  }
+
+  &__br {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .infocenter-news {
+    &__br {
+      display: block;
+    }
+    .services-experience-case {
+      &__wrapper {
+        padding: 60px 0 60px;
+      }
+      &__top {
+        margin-bottom: 54px;
+      }
+    }
+
+    .services-medical {
+      &__head {
+        width: 100%;
+      }
+      &__head-text {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+    &__announcement {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  
+    &__announcement-link {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    .infocenter {
+      &__wrapper {
+        padding: 60px 0 27px;
+      }  
+      &__head {
+        font-family: 'PTRNormal';
+        font-weight: 500;
+
+      }
+      &__wrapper-card {
+        margin-top: 39px;
+      }
+      &__card-head {
+        margin-top: 39px;
+      }
+      &__pagination {
+        padding: 0;
+      }
+
+      .recommendation__number,
+      .recommendation__number--current {
+        font-family: 'BitterRegular'; 
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}

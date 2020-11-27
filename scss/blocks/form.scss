@@ -1,0 +1,160 @@
+.form {
+
+  &__group {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  &__label {
+    max-width: 31.6%;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    &--comments {
+      width: 100%;
+      max-width: 100%;
+
+    }
+  }
+
+  &__error-text {
+    display: none;
+    color: $form-error-c;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px 2px;
+    border: none;
+    background-color: inherit;
+    font-family: 'PTRNormal';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $form-c;
+    outline:none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid $form-c;
+
+    &::placeholder {
+      color: $form-c-opacity;
+      opacity: 0.4;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:focus {
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid $form-c;
+
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--error {
+      color: $form-error-c;
+    }
+  }
+
+  &__input--error ~ .form__error-text {
+    display: block;
+  }
+
+  &__politics {
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__politics-link {
+    text-decoration: underline;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+  &__btn-submit {
+    font-family: 'PTRNormal';
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 261px;
+    height: 60px;
+    align-items: center;
+    color: $form-c;
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    border: 2px solid $color-hover;
+    margin-top: 64px;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      background: $color-hover;
+      color: $form-c;
+    }
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .form {
+    &__label {
+      max-width: 45%;
+      width: 100%;
+    }
+
+  }
+}
+
+@media (max-width: 880px) {
+  .form {
+    &__label {
+      max-width: 100%;
+      width: 100%;
+      &--comments {
+        width: 100%;
+        max-width: 100%;
+  
+      }
+    }
+
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .form {
+    padding-bottom: 52px;
+
+    &__label {
+      max-width: 100%;
+      width: 100%;
+      margin-top: 22px;
+    }
+
+    &__politics {
+      width: 95%;
+      text-align: left;
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 32px;
+    }
+    &__btn-submit {
+      margin: 60px auto 0;
+      width: 341px;
+    }
+  }
+}

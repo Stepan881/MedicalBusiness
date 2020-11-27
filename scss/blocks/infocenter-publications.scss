@@ -1,0 +1,40 @@
+.infocenter-publications {
+  .infocenter {
+    &__card {
+      padding: 43px 0 20px 15px;
+      min-height: 330px;
+      width: 49%;
+      max-width: none;
+    }
+
+    &__card-data {
+      margin-bottom: 15px;
+    }
+
+    &__card-head {
+      padding: 10px 76px 25px 25px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .infocenter-publications {
+    .infocenter {
+      &__card {
+        width: 100%;
+        padding: 28px 0 28px 0px;
+        min-height: 272px;
+      }
+  
+      &__card-head {
+        padding: 16px 36px 25px 20px;
+      }
+
+      &__card-link {
+        &:nth-child(n + 5) {
+          display: none;
+        }
+      }
+    }
+  }
+}

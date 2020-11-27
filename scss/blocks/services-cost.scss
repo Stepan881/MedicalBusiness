@@ -1,0 +1,177 @@
+.services-cost {
+
+  &__wrapper {
+    padding: 80px 0 97px;
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__wrapper-top {
+    padding: 40px 0 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  &__wrapper-left {
+    width: 49%;
+    padding-right: 50px;
+  }
+
+  &__head-text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__right {
+    width: 49%;
+    padding-right: 50px;
+  }
+
+  &__head-download {
+    margin: 58px 0 30px;
+  }
+
+  .services {
+    &__download {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+
+      svg {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  &__card {
+    max-width: 685px;
+    margin-left: 17%;
+  }
+
+  
+  &__card-head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 26px;
+  }
+
+  &__card-text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+    
+    margin-bottom: 24px;
+  }
+
+  &__card-list {
+    border-left: 1px solid $color-hover;
+    margin-top: 41px;
+    margin-bottom: 61px;
+  }
+
+  &__card-item {
+    font-family: 'BitterRegular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 55px;
+    margin-bottom: 24px;
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: $mobile-width - 1) {
+  .services-cost {
+    background: $bg-color-menu;
+
+    &__wrapper {
+      padding: 60px 0 36px;
+    }
+
+    &__head {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    &__wrapper-top {
+      flex-direction: column;
+      padding: 40px 0 52px;
+    }
+
+    &__wrapper-left {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    &__head-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__right {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .services {
+      &__download {
+        font-family: 'PTRMedium';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &__card {
+
+      margin-left: 0%;
+    }
+
+    &__card-head {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__card-text {
+
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__card-list {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__card-item {
+      font-family: 'BitterRegular';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 15px;
+    }
+  }
+}

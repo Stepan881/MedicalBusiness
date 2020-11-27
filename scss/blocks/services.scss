@@ -1,0 +1,142 @@
+.services {
+  background: $sub-menu-c;
+  
+  &__wrapper {
+    padding: 80px 0 86px;
+  }
+
+  &__wrapper-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__head {
+    font-family: 'BitterRegular';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    align-items: center;
+  }
+
+  &__download {
+    font-family: 'PTRNormal';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 15px;
+    }
+    @include hover-link-gold();
+  }
+
+  &__wrapper-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 80px 0 10px;
+  }
+
+  &__left {
+    width: 48%;
+  }
+
+  &__text {
+    font-family: 'PTRNormal';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 24px;
+    width: 96%;
+  }
+
+  &__right {
+    width: 48%;
+  }
+
+  &__item {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 23px;
+    width: 87%;
+    margin-bottom: 16px;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: $sub-menu-border;  
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .services {
+
+    &__wrapper {
+      padding: 60px 0 32px;
+    }
+
+    &__wrapper-top {
+      flex-direction: column;
+    }
+    
+    &__head {
+
+      font-size: 36px;
+      line-height: 44px;
+
+      margin-bottom: 40px;
+    }
+    
+    &__download {
+      display: flex;
+      flex-direction: row;
+
+      svg {
+        order: 1;
+        margin-left: 12px;
+      }
+    }
+    
+    &__wrapper-bottom {
+      flex-direction: column;
+      padding: 40px 0 10px;
+    }
+    
+    &__left {
+      width: 100%;
+    }
+    
+    &__text {
+      margin-bottom: 24px;
+    width: 100%;
+    }
+    
+    &__right {
+      width: 100%;
+      margin-top: 15px;
+    }
+    
+    &__item {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+
+  }
+}

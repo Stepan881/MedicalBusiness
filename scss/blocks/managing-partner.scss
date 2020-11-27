@@ -1,0 +1,149 @@
+.managing-partner {
+  background: $managing-partner-bg;
+  color: $bg-color-menu;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top,
+  &__bottom {    
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__wrapper-img {
+    max-width: 530px;
+    margin: -70px 0 0 -71px;
+  }
+
+  &__top-right {
+    max-width: 600px;
+    margin-left: 63px;
+  }
+  &__name {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 60px;    
+    margin-bottom: 64px;
+  }
+  &__job {
+    font-family: 'PTRNormal';
+    font-weight: 400;
+  }
+  &__head {
+    font-family: 'BitterRegular';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+
+    padding-left: 63px;
+    border-left: 1px solid $color-hover;
+  }
+
+  &__bottom {
+    margin-top: 30px;
+    padding-bottom: 81px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__bottom-left,
+  &__bottom-right {
+    width: 48.5%;
+  }
+
+  &__text {
+    margin-top: 24px;
+    width: 95%;
+  }
+  &__bottom-right {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .managing-partner {
+    &__top {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .managing-partner {
+    &__bottom {
+      flex-direction: column;
+    }
+    &__bottom-left,
+    &__bottom-right {
+      width: 100%;
+    }
+    &__top-right {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .managing-partner {
+
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__top,
+    &__bottom {
+      flex-direction: column;
+    }
+
+    &__wrapper-img {
+      width: 251px;
+      margin: -59px 0 0;
+    }
+
+    &__top-right {
+      margin: 0;
+
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 28px;
+
+      margin-top: 10px;
+      margin-bottom: 45px;
+    }
+
+    &__job {
+      font-size: 16px;
+      line-height: 20px;    
+      margin-left: 11px;
+    }
+
+    &__head {
+      font-size: 22px;
+      line-height: 30px;
+      padding-left: 20px;
+    }
+
+    &__bottom {
+      margin-top: 19px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__bottom-left,
+    &__bottom-right {
+      width: 100%;
+    }
+
+  }
+}

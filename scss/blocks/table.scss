@@ -1,0 +1,222 @@
+.table {
+  td {
+    padding-top: 20px;
+    width: 196px;
+    &:nth-child(1) {
+      width: 262px;
+    }
+  }
+  div {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  tr {
+    vertical-align: top;
+    td {
+      &:not(:nth-child(1)) {
+        div {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  tr {
+    &:not(:nth-child(1)) {
+      div {
+        width: 163px;
+        margin-bottom: 24px;
+        
+      }
+      td {
+        
+        div {
+          &:first-child {
+            
+            margin-bottom: 8px;
+          }
+          &:last-child {
+           margin-bottom: 20px;
+          } 
+        }
+        &:nth-child(1) {
+          div {
+            &:first-child {
+              margin-bottom: 23px;
+            }
+          }
+          
+        }
+      }
+    }
+    &:nth-child(1) { 
+      
+      td {
+        
+        div {
+          margin-left: 31px;
+        }
+        &:nth-child(1) { 
+          div {
+            margin-left: 10px;
+          }
+        }
+      }
+    }   
+
+  }
+
+  &__table {
+    border-collapse: collapse;
+    border: 1px solid $color-hover;
+  }
+  &__td {
+    border: 1px solid $color-hover;
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+  }
+
+  &__sub-head {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__sub-head-bottom {
+    font-family: 'PTRNormal';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__content {
+    font-family: 'PTRNormal';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+
+    &--boolet {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: -14px;
+        top: 7px;
+        border-radius: 50%;
+        background: $color-hover;
+      }
+    }
+
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .table {
+    td {
+      padding-top: 3px;
+      width: 196px;
+      &:nth-child(1) {
+        width: 262px;
+      }
+    }
+    div {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  
+    tr {
+      td {
+        &:not(:nth-child(1)) {
+          div {
+            margin-left: 20px;
+
+          }
+        }
+      }
+    }
+    tr {
+      &:not(:nth-child(1)) {
+        div {
+          width: 163px;
+          margin-bottom: 24px;
+          
+        }
+        td {
+          
+          div {
+            &:first-child {
+              
+              margin-bottom: 8px;
+            }
+            &:last-child {
+             margin-bottom: 20px;
+            } 
+          }
+          &:nth-child(1) {
+            div {
+              &:first-child {
+                margin-bottom: 5px;
+              }
+            }
+            
+          }
+        }
+      }
+      &:nth-child(1) { 
+        
+        td {
+          
+          div {
+            margin-left: 3px;
+            
+          }
+          &:nth-child(1) { 
+            div {
+              margin-left: 4px;
+            }
+          }
+        }
+      }   
+  
+    }
+  
+    &__head {
+      font-family: 'PTRMedium';
+      font-weight: bold;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    &__sub-head {
+      font-family: 'PTRMedium';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    &__sub-head-bottom {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    &__content {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.rules {
+  background: $bg-color-menu;
+
+  &__wrapper {
+    padding: 80px 0 60px;
+    max-width: 625px;
+    width: 100%;
+  }
+  
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    
+    margin-bottom: 40px;
+
+  }
+  
+  &__text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  
+  &__link {
+    font-family: 'PTRBold';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-hover;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+
+  .about-logo-list {
+  
+    &__wrapper {
+      padding: 16px 0 24px;
+    }
+    
+    &__head {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+    &__list {
+      margin-top: 24px;
+    }
+    
+    &__item {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px; 
+      padding-left: 32px;
+      margin-bottom: 16px;
+      &::before {
+        left: 1%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .rules {
+  
+    &__wrapper {
+      padding: 60px 0 40px
+    }
+    
+    &__head {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .about-logo-list {     
+      &__item {
+        padding-left: 28px;
+        &::before {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+}
+

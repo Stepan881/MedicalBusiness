@@ -1,0 +1,91 @@
+.sub-menu {
+  height: 56px;
+  position: relative;
+
+  &--big {
+    height: 64px;
+  }
+
+  &__fix {
+    position: fixed;
+    width: 100%;
+    background-color: $sub-menu-bg;
+    z-index: 9;
+    height: inherit;
+  }
+
+  &__wrapper {
+    max-width: 1440px;
+    min-width: 340px;
+    width: 100%;
+    overflow-y: auto;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    overflow: hidden;
+  }
+
+  &__list {
+
+    width: 100%;
+    color: $sub-menu-c;
+    max-width: 1440px;
+    min-width: 771px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "PTRNormal";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+
+  }
+  &__item {
+    width: auto;
+    text-align: center;
+  }
+
+  &__border {
+    display: flex;
+    max-width: 1px;
+    min-width: 1px;
+    height: 24px;
+    background: $color-hover;
+
+
+  }
+
+  &__link {
+    white-space: nowrap;
+
+    &:hover {
+      color: $sub-menu-border;
+    }
+
+    &--active {
+      color: $sub-menu-border;
+      cursor: default;
+    }
+  }
+}
+@media (max-width: $mobile-width - 1) {
+  .sub-menu {
+
+    &__list {
+      padding: 0 25px;
+    }
+    &__item {
+      margin: 0 2px;
+    }
+    .container {
+      padding: 0;
+    }
+    &--big {
+      height: 56px;
+    }
+  }
+}

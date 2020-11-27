@@ -1,0 +1,96 @@
+.about {
+  background: $bg-color-menu;
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+
+  &__header {
+    font-family: 'BitterRegular';
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+  }
+
+  &__download-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  &__download-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__download-text {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-style: normal;
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    @include hover-color-gold;
+  }
+
+  &__bottom {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__box {  
+    width: 49%;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    padding-right: 51px;
+  }
+}
+
+@media (max-width: $mobile-width + 149) {
+  .about {
+    &__wrapper {
+      padding-top: 59px;
+      padding-bottom: 36px;
+      flex-direction: column;
+    }
+
+    &__header {
+      font-family: 'BitterRegular';
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__download-wrapper {
+      margin: 41px 0 0;
+    }
+    &__download-icon {
+      order: 1;
+      margin: 0 0 0 12px;
+    }
+    &__download-text {
+      margin: 0;
+    }
+    &__bottom {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    &__box {
+      width: 100%;
+    }
+    &__text {
+      padding: 0;
+    }
+  }
+}

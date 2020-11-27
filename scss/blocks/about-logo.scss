@@ -1,0 +1,128 @@
+.about-logo {
+  background: $sub-menu-c;
+
+  &__wrapper {
+    padding: 80px 0 39px;
+
+  }
+
+  &__head-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    padding-right: 50px;
+  }
+
+  &__wrapper-left {
+    max-width: 720px;
+  }
+
+  &__head-text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 38px 0 50px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 458px;
+    margin-right: 96px;
+  }
+
+  &__sub-header {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  &__text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 37px;
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .about-logo {
+
+    &__wrapper {
+      padding: 60px 0 13px;
+    }
+  
+    &__wrapper-top {
+      flex-direction: column;
+    }
+  
+    &__head {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      display: block;
+      margin-bottom: 40px;
+    }
+  
+    &__head-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    &__img-wrapper {
+      margin: 26px auto 21px;
+      width: 340px;
+    }
+  
+    &__content-wrapper {
+      flex-direction: column;
+    }
+  
+    &__item {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  
+    &__sub-header {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 14px;
+    }
+  
+    &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 26px;
+    }
+  }
+}

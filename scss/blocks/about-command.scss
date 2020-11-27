@@ -1,0 +1,127 @@
+.about-command {
+  background: $bg-color-tel;
+
+  &__wrapper {
+    padding: 80px 0 37px;
+  }
+
+  &__head {
+    font-family: 'PTRBold';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__cards {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &::after {
+      content: "";
+      flex: auto;
+    }
+  }
+
+  &__article {
+    max-width: 360px;
+    min-height: 551px;
+    background: $sub-menu-c;
+    position: relative;
+    margin-bottom: 41px;
+    box-shadow: 0px 8px 20px rgba(36, 52, 75, 0.12);
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      box-shadow: 0px 8px 25px rgba(36, 52, 75, 0.24);
+    }
+    // &:nth-child(3n - 2),
+    // &:nth-child(3n - 1) {
+    //   margin-right: 30px;
+
+    // } 
+  }
+
+  &__article-link-page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__name {
+    font-family: 'PTRMedium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 20px 0 0 19px;
+    flex: 1;
+  }
+
+  &__lob {
+    color: $color-hover;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px 0 24px 19px;
+  }
+}
+
+@media (max-width: 860px) {
+  .about-command {
+    &__article {
+      width: 341px;
+      height: 373px;
+      margin: 0 auto 41px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .about-command {
+    &__cards {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .about-command {
+
+    &__wrapper {
+      padding: 60px 0 20px;
+    }
+
+    &__head {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    &__image {
+      object-fit: cover;
+    }
+
+    &__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__lob {
+      font-size: 14px;
+      line-height: 22px;
+      padding: 10px 0 24px 19px;
+    }
+
+  }
+}

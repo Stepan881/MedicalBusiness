@@ -1,0 +1,222 @@
+.career-vacancies {
+  .nav-menu {
+    &__link-arrow {
+      display: flex;
+      width: 135px;
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      color: $color-hover;
+
+      &::before,
+      &::after {
+        top: 12px;
+      }
+      &:hover {
+
+        &::before,
+        &::after {
+          top: 15px;  
+        }
+      }
+    }
+  }
+
+  .about-documents {
+    &__wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 100px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      width: 100%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &__btn {
+      width: 253px;
+      min-width: 200px;
+      height: 60px;
+      margin-top: 28px;
+      margin-left: auto;
+
+      @include hover-btn-gold();
+      
+      &:hover {
+        color: $color;  
+      }
+    }
+  }
+  &__wrapper-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__head-text {
+    margin: 10px 0px;
+    max-width: 457px;
+    width: 100%;
+    padding-right: 15px;
+  }
+  &__btn-open {
+    text-align: left;
+    display: block;
+    margin-right: auto;
+  }
+  &__wrapper-open-btn {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  &__wrapper-bottom {
+    max-height: 0.1px;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 100%;
+    &--open {
+      max-height: 100%;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+  }
+
+  &__card-item {
+    width: 49%;
+    margin-bottom: 13px;
+  }
+  &__borrom-info-text {
+    font-family: 'PTRNormal';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 943px;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+
+  .about-logo-list {
+    &__wrapper {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__head {
+      font-family: 'PTRBold';
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 26px;
+    }
+    &__head-gold {
+      color: $color-hover;
+    }
+    &__list {
+      margin-top: 38px;
+    }
+    &__item {
+      font-family: 'PTRNormal';
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 26px;
+      width: 85%;
+      margin-bottom: 20px;
+
+      &::before {
+        width: 8px;
+        height: 8px;
+        transform: translate(0, -50%);
+        left: 0;
+
+
+      }
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width - 1) {
+  .career-vacancies {
+    .nav-menu {
+      &__link-arrow {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  
+    .about-documents {
+      
+      &__card {
+        padding: 20px 16px;
+        
+      }
+  
+      &__text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 6px;
+        font-family: 'PTRBold';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+      &__btn {
+        font-family: 'PTRMedium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        width: 271px;
+
+      }
+    }
+
+  &__wrapper-top {
+    flex-direction: column;
+  }
+  &__wrapper-open-btn {
+    justify-content: center;
+    margin-top: 40px;
+  }
+  &__card-item {
+    width: 100%;
+    margin-bottom: 0px;
+
+  }
+  
+    .about-logo-list {
+      &__wrapper {
+        flex-direction: column;
+      }
+      &__head {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 6px;
+      }
+      &__list {
+        margin-top: 24px;
+      }
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}
